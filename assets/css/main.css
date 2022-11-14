@@ -31,15 +31,10 @@ header ul li {
     border: 2px solid black;
 }
 
-.content {
+main {
     height: 600px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.content article {
-    padding: 20px;
 }
 
 .yellow {
@@ -49,17 +44,22 @@ header ul li {
 
 .cyan {
     background-color: cyan;
-    flex: 2 0 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.cyan section {
+    display: flex;
+    flex: 1 0 200px;
+    padding: 40px;
+    border: 2px dotted white;
+}
+
 
 .purple {
     background-color: orchid;
     flex: 1 0 100px;
-}
-
-.middle {
-    border-right: 2px solid white;
-    border-left: 2px solid white;
 }
 
 footer {
